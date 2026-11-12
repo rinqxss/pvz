@@ -1,0 +1,419 @@
+:root {
+  --primary: #005bff;
+  --primary-hover: #0046c7;
+  --accent-pink: #f91155;
+  --bg-page: #f2f5f9;
+  --bg-surface: #ffffff;
+  --bg-dark: #001a34;
+  --text-main: #001a34;
+  --text-muted: #5a6c7d;
+  --text-light: #ffffff;
+  --border-color: #dce3ec;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 8px 24px rgba(0, 26, 52, 0.06);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  font-weight: 800;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* Блок: Logo */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--text-main);
+}
+
+.logo_theme_light {
+  color: var(--text-light);
+}
+
+.logo__brand {
+  color: var(--primary);
+  letter-spacing: 0.5px;
+}
+
+.logo_theme_light .logo__brand {
+  color: var(--text-light);
+}
+
+.logo__sub {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.logo_theme_light .logo__sub {
+  color: #94a3b8;
+}
+
+/* Блок: Button */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 26px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.button_theme_primary {
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+.button_theme_primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.button_theme_secondary {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  border-color: var(--border-color);
+}
+
+.button_theme_secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.button_size_small {
+  padding: 10px 18px;
+  font-size: 0.9rem;
+}
+
+/* Блок: Header */
+.header {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* Блок: Nav */
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 24px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover {
+  color: var(--primary);
+}
+
+/* Блок: Hero */
+.hero {
+  padding: 56px 0;
+}
+
+.hero__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero__content {
+  flex: 1 1 460px;
+}
+
+.hero__badge {
+  display: inline-block;
+  background-color: #e0ecff;
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 99px;
+  margin-bottom: 16px;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero__description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero__media {
+  flex: 1 1 400px;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
+
+/* Блок: Services & Service Card */
+.services {
+  padding: 48px 0;
+}
+
+.services__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.service-card {
+  flex: 1 1 290px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.service-card_accent {
+  border: 2px solid var(--primary);
+}
+
+.service-card__tag {
+  background-color: #e0ecff;
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 99px;
+  margin-bottom: 16px;
+}
+
+.service-card__tag_accent {
+  background-color: #ffe4ec;
+  color: var(--accent-pink);
+}
+
+.service-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.service-card__text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Блок: Steps & Step Item */
+.steps {
+  padding: 48px 0;
+}
+
+.steps__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.step-item {
+  flex: 1 1 290px;
+  background-color: var(--bg-surface);
+  border-radius: var(--radius);
+  padding: 28px;
+  border: 1px solid var(--border-color);
+}
+
+.step-item__number {
+  display: inline-block;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.step-item__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.step-item__text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Блок: Location & Location Card */
+.location {
+  padding: 48px 0 80px;
+}
+
+.location-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  padding: 36px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.location-card__info {
+  flex: 1 1 480px;
+}
+
+.location-card__badge {
+  display: inline-block;
+  background-color: #dcfce7;
+  color: #15803d;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 99px;
+  margin-bottom: 12px;
+}
+
+.location-card__title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.location-card__details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.location-card__detail-item {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.location-card__label {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.location-card__action-box {
+  flex: 1 1 260px;
+  background-color: var(--bg-page);
+  padding: 24px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.location-card__note {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* Блок: Footer */
+.footer {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 44px 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer__copy {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer__link {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: var(--text-light);
+}
