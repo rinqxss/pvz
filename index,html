@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пункт выдачи Ozon — Быстрое получение и отправка посылок</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="logo">
+        <span class="logo__brand">OZON</span> <span class="logo__sub">Пункт выдачи</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+          <li class="nav__item"><a href="#steps" class="nav__link">Как получить</a></li>
+          <li class="nav__item"><a href="#location" class="nav__link">Адрес и график</a></li>
+        </ul>
+      </nav>
+      <a href="#location" class="button button_theme_primary button_size_small">Построить маршрут</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="hero__badge">Работаем ежедневно с 09:00 до 21:00</span>
+          <h1 class="hero__title">Ваш удобный пункт выдачи заказов Ozon рядом с домом</h1>
+          <p class="hero__description">
+            Выдача посылок за 30 секунд по штрихкоду из приложения. Просторные примерочные с большими зеркалами и удобный возврат товаров без очередей.
+          </p>
+          <div class="hero__actions">
+            <a href="#location" class="button button_theme_primary">Узнать адрес</a>
+            <a href="#services" class="button button_theme_secondary">Все возможности ПВЗ</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img src="https://unsplash.com" alt="Коробки с заказами в пункте выдачи" class="hero__image">
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">Услуги нашего пункта выдачи</h2>
+        <div class="services__grid">
+
+          <article class="service-card">
+            <div class="service-card__tag">Бесплатно</div>
+            <h3 class="service-card__title">Выдача заказов Ozon</h3>
+            <p class="service-card__text">
+              Мгновенное получение посылок по QR-коду или цифровому коду из личного кабинета. Проверка целостности на месте.
+            </p>
+          </article>
+
+          <article class="service-card service-card_accent">
+            <div class="service-card__tag service-card__tag_accent">Комфорт</div>
+            <h3 class="service-card__title">Примерка до оплаты</h3>
+            <p class="service-card__text">
+              Три оборудованные примерочные с ярким освещением, пуфами и ложками для обуви. Оплачивайте только то, что подошло.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__tag">Удобно</div>
+            <h3 class="service-card__title">Возврат и отправка</h3>
+            <p class="service-card__text">
+              Быстрое оформление возврата неподошедшего товара, а также отправка личных посылок через сервис Ozon Посылка.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="steps" id="steps">
+      <div class="container">
+        <h2 class="section-title">Как забрать заказ за 3 шага</h2>
+        <div class="steps__list">
+
+          <article class="step-item">
+            <span class="step-item__number">01</span>
+            <h3 class="step-item__title">Дождитесь уведомления</h3>
+            <p class="step-item__text">Когда статус заказа изменится на «Готов к выдаче», в приложении появится персональный штрихкод.</p>
+          </article>
+
+          <article class="step-item">
+            <span class="step-item__number">02</span>
+            <h3 class="step-item__title">Покажите код оператору</h3>
+            <p class="step-item__text">Поднесите экран смартфона к сканеру на стойке выдачи — сотрудник принесет посылку за полминуты.</p>
+          </article>
+
+          <article class="step-item">
+            <span class="step-item__number">03</span>
+            <h3 class="step-item__title">Проверьте и заберите</h3>
+            <p class="step-item__text">Осмотрите товар на специальном столе или пройдите в примерочную перед тем, как забрать покупку.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="location">
+      <div class="container">
+        <div class="location-card">
+          <div class="location-card__info">
+            <span class="location-card__badge">Открыто сейчас</span>
+            <h2 class="location-card__title">Ждем вас за покупками</h2>
+            <ul class="location-card__details">
+              <li class="location-card__detail-item">
+                <span class="location-card__label">Адрес:</span> ул. Центральная, д. 42, корпус 1 (вход со стороны проспекта)
+              </li>
+              <li class="location-card__detail-item">
+                <span class="location-card__label">График работы:</span> Ежедневно с 09:00 до 21:00, без перерывов и выходных
+              </li>
+              <li class="location-card__detail-item">
+                <span class="location-card__label">Оснащение:</span> 3 примерочные, стол проверки техники, бесплатные пакеты
+              </li>
+            </ul>
+          </div>
+          <div class="location-card__action-box">
+            <p class="location-card__note">Выберите наш пункт при оформлении заказа в приложении Ozon</p>
+            <a href="#" class="button button_theme_primary">Скопировать адрес</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <a href="#" class="logo logo_theme_light">
+          <span class="logo__brand">OZON</span> <span class="logo__sub">Пункт выдачи</span>
+        </a>
+        <p class="footer__copy">Официальный партнерский пункт выдачи заказов. Все права защищены.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#services" class="footer__link">Услуги</a>
+        <a href="#steps" class="footer__link">Инструкция</a>
+        <a href="#location" class="footer__link">Контакты</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
